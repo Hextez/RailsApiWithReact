@@ -13,6 +13,7 @@ module Api::V1
 
     # GET /users/1
     def show
+      logger.debug 'AQUI CRL'
       render json: { name: @user.name, email: @user.email}
     end
 
